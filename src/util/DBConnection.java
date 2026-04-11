@@ -10,9 +10,10 @@ import java.sql.SQLException;
  */
 public class DBConnection {
 
-    private static final String DB_URL  = "jdbc:mysql://localhost:3306/online_exam_db?useSSL=false&serverTimezone=UTC";
+    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/online_exam_db?useSSL=false&serverTimezone=UTC&connectTimeout=5000&socketTimeout=10000&allowPublicKeyRetrieval=true";
+
     private static final String DB_USER = "root";        // change if needed
-    private static final String DB_PASS = "";            // change if needed
+    private static final String DB_PASS = "qwerty";            // change if needed
 
     private static Connection connection = null;
 
