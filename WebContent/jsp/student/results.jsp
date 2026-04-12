@@ -147,7 +147,7 @@ input[type=radio]:checked + .option-label,
         <div class="alert alert-info">&#9432; You have already attempted that exam. View your result below.</div>
     <% } %>
     <%
-        List<r> results = (List<r>) request.getAttribute("results");
+        List<Result> results = (List<Result>) request.getAttribute("results");
     %>
     <% if (results == null || results.isEmpty()) { %>
         <div class="card" style="text-align:center; padding:2.5rem; color:var(--muted);">
