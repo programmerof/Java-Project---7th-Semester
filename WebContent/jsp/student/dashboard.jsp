@@ -142,7 +142,7 @@ input[type=radio]:checked + .option-label,
     <%
         User user    = (User) request.getAttribute("user");
         List<Exam>   exams   = (List<Exam>)   request.getAttribute("exams");
-        List<r> results = (List<r>) request.getAttribute("results");
+        List<Result> results = (List<Result>) request.getAttribute("results");
         ResultDAO rDAO = (ResultDAO) request.getAttribute("resultDAO");
     %>
     <div class="page-header">
